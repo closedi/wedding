@@ -3,5 +3,5 @@ import react from '@vitejs/plugin-react' // замените на ваш фре�
 
 export default defineConfig({
 	plugins: [react()],
-	base: '/wedding', // ← здесь задаётся базовый путь
+	base: '/wedding/', // ← здесь задаётся базовый путь
 })
