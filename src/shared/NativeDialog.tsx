@@ -1,4 +1,4 @@
-import {useRef, useEffect, RefObject} from 'react';
+import {useRef, useEffect} from 'react';
 
 export default function NativeDialog({ isOpen, onClose, children }: any) {
 	const dialogRef = useRef(null);

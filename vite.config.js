@@ -1,8 +1,12 @@
-import {defineConfig} from 'vite'
+import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 
+const REPO_NAME = 'wedding'
 
-export default defineConfig({
-	plugins: [react()],
-	base: '/wedding/', // ← здесь задаётся базовый путь
-})
+export default defineConfig(({ mode }) => ({
+	base: mode === 'production' ? `/${REPO_NAME}/` : '/',
+	build: {
+		outDir: 'dist/wedding', // опционально
+		emptyOutDir: true
+	},
+	plugins: [react()]}))

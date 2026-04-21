@@ -4,7 +4,6 @@ import hideImage from "../../assets/hide.jpg";
 
 export default function PlaceSection() {
   const { venueName, address } = siteContent.details;
-  const { coordinatorName, coordinatorPhone } = siteContent.contacts;
 
   return (
     <Section id="place" title="Место проведения">
