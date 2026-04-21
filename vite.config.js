@@ -6,7 +6,7 @@ const REPO_NAME = 'wedding'
 export default defineConfig(({ mode }) => ({
 	base: mode === 'production' ? `/${REPO_NAME}/` : '/',
 	build: {
-		outDir: 'dist/wedding', // опционально
+		outDir: 'dist',
 		emptyOutDir: true
 	},
 	plugins: [react()]}))
