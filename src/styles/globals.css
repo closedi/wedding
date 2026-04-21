@@ -5,6 +5,7 @@
   font-family: "Alice", Georgia, Cambria, "Times New Roman", serif;
   line-height: 1.6;
   font-size: 16px;
+  scrollbar-gutter: stable;
 }
 
 * {

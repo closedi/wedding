@@ -10,8 +10,10 @@ export default function NativeDialog({ isOpen, onClose, children }: any) {
 
 		if (isOpen && !dialog.open) {
 			dialog.showModal(); // Открывает как модалку (с backdrop)
+			document.body.style.overflow = 'hidden';
 		} else if (!isOpen && dialog.open) {
 			dialog.close();     // Закрывает
+			document.body.style.overflow = '';
 		}
 	}, [isOpen]);
 
