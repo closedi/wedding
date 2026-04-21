@@ -61,7 +61,7 @@ export default function RsvpSection() {
           <div className="iframe-wrapper">
             <iframe
                 src="https://docs.google.com/forms/d/e/1FAIpQLSduRGajq7faJtd_hBHtvrhMAuOWFXh6gZ-5xb-TJLPNJN-qTw/viewform?embedded=true"
-                width="100%" height="983" frameBorder="0" marginHeight="0" marginWidth="0">Загрузка…
+                width="100%" height="983" frameBorder="0">Загрузка…
             </iframe>
           </div>
         </NativeDialog>
