@@ -1,0 +1,92 @@
+.wedding-week {
+    --wedding-bg: #fdf8f5;
+    --wedding-card: #ffffff;
+    --wedding-text: #5c4b43;
+    --wedding-accent: #c9a87c;
+    --wedding-highlight: #e8b4b8;
+    --wedding-font: 'Cormorant Garamond', Georgia, serif;
+
+    font-family: var(--wedding-font);
+    max-width: 640px;
+    margin-top: 3rem;
+    background: var(--wedding-card);
+    border-radius: 20px;
+    padding: 2.5rem 2rem;
+    box-shadow: 0 12px 32px rgba(92, 75, 67, 0.1);
+    border: 1px solid rgba(201, 168, 124, 0.2);
+    box-sizing: border-box;
+}
+
+.calendar-header h2 {
+    text-align: center;
+    color: var(--wedding-text);
+    margin: 0 0 1.5rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-size: 1.6rem;
+}
+
+.week-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 8px;
+    text-align: center;
+}
+
+.day-header {
+    font-weight: 600;
+    color: var(--wedding-accent);
+    padding: 0.5rem 0;
+    border-bottom: 2px solid var(--wedding-accent);
+    margin-bottom: 6px;
+    font-size: 0.9rem;
+}
+
+.day {
+    position: relative;
+    padding: 0.8rem 0.4rem;
+    border-radius: 12px;
+    color: var(--wedding-text);
+    transition: all 0.25s ease;
+    cursor: default;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 70px;
+}
+
+.day-number {
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+.day-month {
+    font-size: 0.75rem;
+    opacity: 0.7;
+    margin-top: 2px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.day:hover {
+    background: rgba(201, 168, 124, 0.12);
+    transform: translateY(-2px);
+}
+
+.day.wedding-day {
+    background: var(--wedding-highlight);
+    color: #fff;
+    box-shadow: 0 6px 16px rgba(232, 180, 184, 0.45);
+}
+
+.day.wedding-day .day-month { opacity: 0.9; }
+
+@media (max-width: 520px) {
+    .wedding-week { padding: 1.5rem 1rem; margin-top: 2rem; }
+    .day { padding: 0.6rem 0.2rem; min-height: 60px; }
+    .day-number { font-size: 1.1rem; }
+    .calendar-header h2 { font-size: 1.3rem; }
+}
