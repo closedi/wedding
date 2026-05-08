@@ -1,10 +1,8 @@
-/*@import url("https://fonts.googleapis.com/css2?family=Alice&family=Great+Vibes&display=swap");*/
-/*@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');*/
-@import url('https://fonts.googleapis.com/css2?family=Marcellus&family=Tenor+Sans&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Alice&family=Bad+Script&family=Great+Vibes&display=swap");
 
 :root {
   color-scheme: light;
-  font-family: "Tenor Sans", serif;
+  font-family: "Alice", serif;
   line-height: 1.6;
   font-size: 16px;
   scrollbar-gutter: stable;
@@ -225,6 +223,7 @@ body {
 
 #main .muted {
   color: rgba(255, 244, 240, 0.9);
+  font-family: 'Bad Script', cursive;
 }
 
 .main {
@@ -254,7 +253,7 @@ h1 {
   margin: 0.5rem 0 0.75rem;
   font-size: clamp(3rem, 12vw, 4rem);
   line-height: 1.2;
-  font-family: "Marcellus", cursive;
+  font-family: "Great Vibes", serif;
   font-weight: 400;
 }
 
@@ -262,7 +261,7 @@ h2 {
   margin: 0 0 1rem;
   font-size: clamp(2.00rem, 8.23vw, 2.73rem);
   line-height: 1.25;
-  font-family: "Marcellus", cursive;
+  font-family: "Great Vibes", serif;
   font-weight: 400;
 }
 
@@ -289,17 +288,6 @@ h2 {
   width: 1px;
   background: #1f1f1f;
 }
-
-/*.timeline-heading {*/
-/*  margin: 0 0 2rem;*/
-/*  text-align: center;*/
-/*  text-transform: uppercase;*/
-/*  font-family: "Alice", Georgia, Cambria, "Times New Roman", serif;*/
-/*  font-weight: 400;*/
-/*  letter-spacing: 0.06em;*/
-/*  font-size: clamp(1.55rem, 6vw, 2rem);*/
-/*  line-height: 1.2;*/
-/*}*/
 
 .timeline-item {
   position: relative;

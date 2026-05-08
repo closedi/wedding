@@ -39,9 +39,7 @@ const WeddingWeek = ({
 
 	return (
 		<div className="wedding-week" style={cssVars}>
-			<div className="calendar-header">
-				<h1>15 августа 2026</h1>
-			</div>
+			<h2>15 августа 2026</h2>
 			<div className="calendar-grid week-grid">
 				{WEEKDAYS.map((day) => (
 					<div key={day} className="day-header">{day}</div>
