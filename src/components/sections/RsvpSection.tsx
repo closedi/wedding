@@ -47,7 +47,7 @@ export default function RsvpSection() {
   return (
       <Section id="rsvp" title="Анкета гостя">
         <article className="card">
-          <p>Пожалуйста, заполните анкету до 15.05.2026.</p>
+          <p>Пожалуйста, заполните анкету до 01.06.2026.</p>
           <p>Это поможет нам лучше спланировать этот день и учесть ваши пожелания.</p>
           <button className="form-button" onClick={() => setIsOpen(true)} style={{ padding: '10px 20px', cursor: 'pointer' }}>
             Заполнить

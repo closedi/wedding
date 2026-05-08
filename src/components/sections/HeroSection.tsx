@@ -8,7 +8,9 @@ export default function HeroSection() {
     <Section id="main">
       <div className="main">
         <h1 className="muted">
-          {bride} & {groom}
+            {bride}
+            <div>&</div>
+            {groom}
         </h1>
         <p className="muted">
           {weddingDate} · {city}
